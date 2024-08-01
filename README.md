@@ -1,30 +1,23 @@
-# Bike Rental Prediction
+# Linear Regression Projects
 
-This repository contains a Streamlit application for predicting bike rentals based on various input features. The model used for predictions is a pre-trained linear regression model.
+This repository contains two projects utilizing linear regression for predictive analysis: the Bike Rental Prediction System and the Medical Insurance Amount Prediction System. Both projects are built using Python and Streamlit, and they share common requirements.
 
-## Description
+## Projects
 
-This project is designed to predict the total number of bike rentals based on user input for various features such as season, month, holiday status, weekday, working day status, weather situation, temperature, apparent temperature, humidity, and windspeed. The application uses a pre-trained model saved as a pickle file to make predictions.
+### 1. Bike Rental Prediction System
 
-### Features
+This project predicts the total number of bike rentals based on various input features using a pre-trained linear regression model.
 
-- **Season**: Select from Spring, Summer, Autumn, or Winter.
-- **Month**: Select from January to December.
-- **Holiday Status**: Select whether it's a public holiday or not.
-- **Weekday**: Select the day of the week.
-- **Working Day Status**: Select whether it's a working day or not.
-- **Weather Situation**: Select the weather situation from Clear, Mist/Cloudy, Light Rainfall/Snowfall, or Hailstorm.
-- **Temperature**: Input the temperature (normalized).
-- **Apparent Temperature**: Input the apparent temperature (normalized).
-- **Humidity**: Input the humidity level (normalized).
-- **Windspeed**: Input the windspeed (normalized).
+### 2. Medical Insurance Amount Prediction System
 
-### Installation
+This project predicts the medical insurance amount a person will be charged based on their attributes using a pre-trained linear regression model.
+
+## Installation
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/bike-rental-prediction.git
-    cd bike-rental-prediction
+    git clone https://github.com/yourusername/linear-regression-projects.git
+    cd linear-regression-projects
     ```
 
 2. **Install the required dependencies**:
@@ -32,37 +25,53 @@ This project is designed to predict the total number of bike rentals based on us
     pip install -r requirements.txt
     ```
 
-3. **Run the Streamlit app**:
+3. **Run the Streamlit app for Bike Rental Prediction**:
     ```sh
-    streamlit run app.py
+    streamlit run bike_rental_app.py
     ```
 
-### Usage
+4. **Run the Streamlit app for Medical Insurance Amount Prediction**:
+    ```sh
+    streamlit run insurance_app.py
+    ```
+
+## Usage
+
+### Bike Rental Prediction System
 
 - Once the Streamlit app is running, you will see a web interface.
-- Use the provided input fields to select or input the required features.
+- Use the provided input fields to enter the required features.
 - Click the "Submit" button to get the prediction for the total number of bike rentals.
 
-### Model
+### Medical Insurance Amount Prediction System
 
-The model used in this application is a pre-trained linear regression model saved as a pickle file (`model.pkl`). This file is included in the repository.
+- Once the Streamlit app is running, you will see a web interface.
+- Use the provided input fields to enter the required features.
+- Click the "Submit" button to get the prediction for the medical insurance amount.
 
-### Files
+## Models
 
-- `app.py`: The main Streamlit application script.
+Both projects use pre-trained linear regression models saved as pickle files. The model files (`bike_rental_model.pkl` and `insurance_model.pkl`) are included in the repository.
+
+## Files
+
+- `bike_rental_app.py`: The Streamlit application script for the Bike Rental Prediction System.
+- `insurance_app.py`: The Streamlit application script for the Medical Insurance Amount Prediction System.
 - `requirements.txt`: List of required Python packages.
-- `model.pkl`: The pre-trained model file included in the repository.
+- `bike_rental_model.pkl`: The pre-trained model file for the Bike Rental Prediction System.
+- `insurance_model.pkl`: The pre-trained model file for the Medical Insurance Amount Prediction System.
 
-### Contributing
+## Contributing
 
 Feel free to contribute to this project by submitting issues or pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-### License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Acknowledgments
+## Acknowledgments
 
-- This project was developed using [Streamlit](https://www.streamlit.io/).
-- Special thanks to the authors of the datasets and tools used in this project.
+- These projects were developed using [Streamlit](https://www.streamlit.io/).
+- Special thanks to the authors of the datasets and tools used in these projects.
+
 
