@@ -9,7 +9,7 @@ loaded_model = joblib.load(insurance_model_pkl)
 st.header("Medical Insurance")
 
 age=st.number_input("Enter the Age ")
-
+bmi=st.number_input("Enter the  bmi")
 sex = st.selectbox("Enter the sex", ("Male", "Female"))
 sex_dict={"Male":0, "Female": 1,}
 sex=sex_dict[sex]
@@ -20,7 +20,10 @@ smoke = st.selectbox("do you smoke", ("Yes", "No"))
 smoke_dict={"Yes":0, "No": 1,}
 smoke=smoke_dict[smoke]
 
-X_new = np.array([[age,sex,children,smoke]])
+region = st.selectbox("which region", ("southwest", "southeast","northwest","northeast"))
+region_dict={"southwest":0, "southeast":1,"northwest":2,"northeast":3}
+region=region_dict[region]
+X_new = np.array([[age,bmi,sex,children,smoke,region]])
 
 button = st.button("Submit")
 
