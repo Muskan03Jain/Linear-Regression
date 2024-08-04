@@ -3,6 +3,7 @@ import numpy as np
 import joblib
 import streamlit as st
 
+#make sure the below path of the model.pkl is correct according to your computer 
 insurance_model_pkl = r"C:\Users\Lenovo\Muskan\Ml\github assignment\Machine-Learning-Projects\Linear_Regression\Medical_Insurance\model.pkl"
 loaded_model = joblib.load(insurance_model_pkl)
 
