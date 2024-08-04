@@ -58,7 +58,7 @@ weathersit=st.selectbox("Enter the weathersit ", ("Clear", "Mist/Cloudy", "Light
 weathersit_dict={"Clear":1, "Mist/Cloudy":2, "Light Rainfall/Snowfall":3, "Hailstorm":4}
 weathersit=weathersit_dict[weathersit]
 
-temp=st.number_input("Enter the temperature ")/75
+
 atemp=st.number_input("Enter the apparent temperature ")/75
 
 hum=st.number_input("Enter the humidity ")/75
@@ -66,7 +66,7 @@ windspeed=st.number_input("Enter the windspeed ")/75
 
 
 
-X_new = np.array([[season,month,holiday,weekday,workingday,weathersit,temp,atemp,hum,windspeed]])
+X_new = np.array([[season,month,holiday,weekday,workingday,weathersit,atemp,hum,windspeed]])
 
 button = st.button("Submit")
 
