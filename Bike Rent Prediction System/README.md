@@ -1,4 +1,5 @@
-# Bike Rental Prediction
+```markdown
+# Bike Rental Prediction System
 
 This repository contains a Streamlit application for predicting bike rentals based on various input features. The model used for predictions is a pre-trained linear regression model.
 
@@ -6,7 +7,7 @@ This repository contains a Streamlit application for predicting bike rentals bas
 
 This project is designed to predict the total number of bike rentals based on user input for various features such as season, month, holiday status, weekday, working day status, weather situation, temperature, apparent temperature, humidity, and windspeed. The application uses a pre-trained model saved as a pickle file to make predictions.
 
-### Features
+## Features
 
 - **Season**: Select from Spring, Summer, Autumn, or Winter.
 - **Month**: Select from January to December.
@@ -19,50 +20,54 @@ This project is designed to predict the total number of bike rentals based on us
 - **Humidity**: Input the humidity level (normalized).
 - **Windspeed**: Input the windspeed (normalized).
 
-### Installation
+## Installation
 
-1. **Clone the repository**:
-    ```sh
+1. Clone the repository:
+
+    ```bash
     git clone https://github.com/yourusername/bike-rental-prediction.git
     cd bike-rental-prediction
     ```
 
-2. **Install the required dependencies**:
-    ```sh
+2. Install the required dependencies:
+
+    ```bash
     pip install -r requirements.txt
     ```
 
-3. **Run the Streamlit app**:
-    ```sh
+3. Run the Streamlit app:
+
+    ```bash
     streamlit run app.py
     ```
 
-### Usage
+## Usage
 
-- Once the Streamlit app is running, you will see a web interface.
-- Use the provided input fields to select or input the required features.
-- Click the "Submit" button to get the prediction for the total number of bike rentals.
+1. Once the Streamlit app is running, you will see a web interface.
+2. Use the provided input fields to select or input the required features.
+3. Click the "Submit" button to get the prediction for the total number of bike rentals.
 
-### Model
+## Model
 
 The model used in this application is a pre-trained linear regression model saved as a pickle file (`model.pkl`). This file is included in the repository.
 
-### Files
+## Files
 
-- `app.py`: The main Streamlit application script.
-- `requirements.txt`: List of required Python packages.
-- `model.pkl`: The pre-trained model file included in the repository.
+- **app.py**: The main Streamlit application script.
+- **requirements.txt**: List of required Python packages.
+- **model.pkl**: The pre-trained model file.
+- **bike_rental_LR.ipynb**: Jupyter Notebook containing the data processing and model training steps.
+- **daily-bike-shared.csv**: Dataset used for training the model.
 
-### Contributing
+## Contributing
 
 Feel free to contribute to this project by submitting issues or pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-### License
+## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Acknowledgments
+## Acknowledgments
 
-- This project was developed using [Streamlit](https://www.streamlit.io/).
-- Special thanks to the authors of the datasets and tools used in this project.
-
+This project was developed using Streamlit. Special thanks to the authors of the datasets and tools used in this project.
+```
