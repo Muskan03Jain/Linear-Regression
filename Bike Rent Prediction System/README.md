@@ -19,26 +19,6 @@ This project is designed to predict the total number of bike rentals based on us
 - **Apparent Temperature**: Input the apparent temperature (normalized).
 - **Humidity**: Input the humidity level (normalized).
 - **Windspeed**: Input the windspeed (normalized).
-
-## Installation
-
-1. Clone the repository:
-
- 
-    git clone https://github.com/yourusername/bike-rental-prediction.git
-    cd bike-rental-prediction
-  
-
-2. Install the required dependencies:
-
-
-    pip install -r requirements.txt
-   
-
-3. Run the Streamlit app:
-
-  
-    streamlit run app.py
  
 
 ## Usage
