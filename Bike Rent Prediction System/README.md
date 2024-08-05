@@ -1,4 +1,4 @@
-```markdown
+
 # Bike Rental Prediction System
 
 This repository contains a Streamlit application for predicting bike rentals based on various input features. The model used for predictions is a pre-trained linear regression model.
@@ -24,22 +24,22 @@ This project is designed to predict the total number of bike rentals based on us
 
 1. Clone the repository:
 
-    ```bash
+ 
     git clone https://github.com/yourusername/bike-rental-prediction.git
     cd bike-rental-prediction
-    ```
+  
 
 2. Install the required dependencies:
 
-    ```bash
+
     pip install -r requirements.txt
-    ```
+   
 
 3. Run the Streamlit app:
 
-    ```bash
+  
     streamlit run app.py
-    ```
+ 
 
 ## Usage
 
@@ -70,4 +70,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 This project was developed using Streamlit. Special thanks to the authors of the datasets and tools used in this project.
-```
+
